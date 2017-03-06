@@ -1,17 +1,37 @@
 <!DOCTYPE html>
 <html>
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Students List</title>
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="stylesheet.css" />
   </head>
   <body>
   <!-- Write your code here -->
     <h1>Students List</h1>
-    <table id="students"></table>
-  <!-- Import Student List Script -->
-  <script type="text/javascript" src="studentsList.js">
+    <table id="students" class="table">
+      <thead>
+        <th class="col-xs-1">First Name</th>
+        <th class="col-xs-1">Last Name</th>
+        <th class="col-xs-1">Sexe</th>
+        <th class="col-xs-1">Birthdate</th>
+        <th class="col-xs-2">City</th>
+        <th class="col-xs-1">Postal code</th>
+        <th class="col-xs-2">Adress</th>
+        <th class="col-xs-2">GitHub</th>
+        <th class="col-xs-2">Email</th>
+      </thead>
+    </table>
 
-  </script>
+  <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+  <!-- Include all compiled plugins (below), or include individual files as needed -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <!-- Import Student List Script -->
+  <script type="text/javascript" src="studentsList.js"></script>
 
   </body>
 </html>
