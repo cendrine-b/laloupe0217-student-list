@@ -22,6 +22,13 @@ request.onreadystatechange = function() {
                               <td>${student.github}</td>
                               <td>${student.email}</td>`;
               table.appendChild(tr);
+
+              students.sort(function(a, b){
+    if(a.firstname < b.firstname) return -1;
+    if(a.firstname > b.firstname) return 1;
+    return 0;
+});
+
             });
 
         } else {
